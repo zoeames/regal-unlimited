@@ -1,0 +1,14 @@
+{
+  "userVisit1": {
+    "uid": "zoe",
+    "visitId": "visit1",
+    "row": "H",
+    "seat": "6"
+  },
+  "userVisit2": {
+    "uid": "glenna",
+    "visitId": "visit2",
+    "row": "H",
+    "seat": "7"
+  }
+}
