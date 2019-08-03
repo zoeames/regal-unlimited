@@ -2,6 +2,8 @@ import React from 'react';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
+import googleBtn from './googlebutton.png';
+
 import './Auth.scss';
 
 class Auth extends React.Component {
@@ -14,8 +16,9 @@ class Auth extends React.Component {
   render() {
     return (
       <div className="Auth">
-        <h1>Auth</h1>
-        <button className="btn btn-secondary" onClick={this.loginClickEvent}>Login with Google</button>
+        <button className="btn btn-secondary col-md-6 col-sm-12" onClick={this.loginClickEvent}>
+          <img className="col-12" src={googleBtn} alt="google login button"/>
+        </button>
       </div>
     );
   }
