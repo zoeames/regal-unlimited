@@ -12,6 +12,7 @@ import MyNavbar from '../components/shared/MyNavbar/MyNavbar';
 import Auth from '../components/pages/Auth/Auth';
 import Home from '../components/pages/Home/Home';
 import NewMovie from '../components/pages/NewMovie/NewMovie';
+import ListMovies from '../components/pages/ListMovies/ListMovies';
 
 
 import './App.scss';
@@ -66,7 +67,8 @@ class App extends React.Component {
                 <Switch>
                   <PublicRoute path='/auth' component={Auth} authed={authed}/>
                   <PrivateRoute path='/home' component={Home} authed={authed}/>
-                  <PrivateRoute path='/new/movie' component={NewMovie} authed={authed}/>
+                  <PrivateRoute path='/movies/new' component={NewMovie} authed={authed}/>
+                  <PrivateRoute path='/movies/list' component={ListMovies} authed={authed}/>
                   <Redirect from="*" to="/auth" />
                 </Switch>
               </div>
