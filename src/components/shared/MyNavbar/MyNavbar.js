@@ -44,15 +44,9 @@ class MyNavbar extends React.Component {
       if (authed) {
         return (
           <Nav className="ml-auto" navbar>
-            {/* <NavItem>
-              <NavLink tag={RRNavLink} to='/home'>Home</NavLink>
-            </NavItem> */}
-            <NavItem>
-
-            </NavItem>
             <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  Movies
+                <i className="fas fa-popcorn"></i> Movies
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
