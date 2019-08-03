@@ -7,5 +7,10 @@
     "storageBucket": "",
     "messagingSenderId": "",
     "appId": ""
+  },
+  "omdbApi": {
+    "apiKey": "",
+    "baseUrl": "",
+    "imgUrl": ""
   }
 }
