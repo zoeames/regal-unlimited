@@ -2,6 +2,7 @@ import React from 'react';
 
 import './NewMovie.scss';
 import omdb from '../../../helpers/data/omdb';
+import moviesData from '../../../helpers/data/moviesData';
 
 import ShortMovie from '../../shared/ShortMovie/ShortMovie';
 
@@ -16,12 +17,22 @@ class NewMovie extends React.Component {
     movies: [],
   }
 
+  saveMovie = (newMovie) => {
+    moviesData.addMovie(newMovie)
+      .then(() => this.props.history.push('/home'))
+      .catch(err => console.error('unable to save movie', err));
+  }
+
   movieSearch = (e) => {
     e.preventDefault();
     const tempMovie = { ...this.state.newMovie };
     const searchTitle = tempMovie.title.replace(' ', '+');
     omdb.searchForMovies(searchTitle, tempMovie.year)
-      .then(res => this.setState({ movies: res.data.Search }))
+      .then((res) => {
+        const omdbMovies = res.data.Search;
+        omdbMovies.sort((a, b) => ((a.Year < b.Year) ? 1 : -1));
+        this.setState({ movies: omdbMovies });
+      })
       .catch(err => console.error(err));
   }
 
@@ -37,7 +48,7 @@ class NewMovie extends React.Component {
 
   render() {
     const { movies, newMovie } = this.state;
-    const makeMovies = movies.map(movie => <ShortMovie key={movie.imdbID} movie={movie}/>);
+    const makeMovies = movies.map(movie => <ShortMovie key={movie.imdbID} movie={movie} saveMovie={this.saveMovie} />);
     return (
       <div className="NewMovie col">
         <h1>Search for Movies</h1>
