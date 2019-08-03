@@ -7,9 +7,12 @@ import {
 } from 'react-router-dom';
 import firebase from 'firebase/app';
 
+import MyNavbar from '../components/shared/MyNavbar/MyNavbar';
+
 import Auth from '../components/pages/Auth/Auth';
 import Home from '../components/pages/Home/Home';
-import MyNavbar from '../components/shared/MyNavbar/MyNavbar';
+import NewMovie from '../components/pages/NewMovie/NewMovie';
+
 
 import './App.scss';
 
@@ -63,6 +66,7 @@ class App extends React.Component {
                 <Switch>
                   <PublicRoute path='/auth' component={Auth} authed={authed}/>
                   <PrivateRoute path='/home' component={Home} authed={authed}/>
+                  <PrivateRoute path='/new/movie' component={NewMovie} authed={authed}/>
                   <Redirect from="*" to="/auth" />
                 </Switch>
               </div>
