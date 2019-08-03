@@ -4,7 +4,7 @@ import './NewMovie.scss';
 import omdb from '../../../helpers/data/omdb';
 import moviesData from '../../../helpers/data/moviesData';
 
-import ShortMovie from '../../shared/ShortMovie/ShortMovie';
+import ShortOmdbMovie from '../../shared/ShortOmdbMovie/ShortOmdbMovie';
 
 const defaultNewMovie = {
   title: '',
@@ -19,7 +19,7 @@ class NewMovie extends React.Component {
 
   saveMovie = (newMovie) => {
     moviesData.addMovie(newMovie)
-      .then(() => this.props.history.push('/home'))
+      .then(() => this.props.history.push('/movies/list'))
       .catch(err => console.error('unable to save movie', err));
   }
 
@@ -48,7 +48,7 @@ class NewMovie extends React.Component {
 
   render() {
     const { movies, newMovie } = this.state;
-    const makeMovies = movies.map(movie => <ShortMovie key={movie.imdbID} movie={movie} saveMovie={this.saveMovie} />);
+    const makeMovies = movies.map(movie => <ShortOmdbMovie key={movie.imdbID} movie={movie} saveMovie={this.saveMovie} />);
     return (
       <div className="NewMovie col">
         <h1>Search for Movies</h1>

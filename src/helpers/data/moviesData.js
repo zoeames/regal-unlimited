@@ -3,8 +3,25 @@ import apiKeys from '../apiKeys.json';
 
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
+const getAllMovies = uid => new Promise((resolve, reject) => {
+  axios
+    .get(`${baseUrl}/movies.json`)
+    .then((res) => {
+      const movies = [];
+      if (res.data !== null) {
+        Object.keys(res.data).forEach((fbKey) => {
+          res.data[fbKey].id = fbKey;
+          movies.push(res.data[fbKey]);
+        });
+      }
+      resolve(movies);
+    })
+    .catch(err => reject(err));
+});
+
 const addMovie = newMovie => axios.post(`${baseUrl}/movies.json`, newMovie);
 
 export default {
   addMovie,
+  getAllMovies,
 };
