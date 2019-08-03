@@ -1,0 +1,12 @@
+{
+  "theater1": {
+    "name": "Regal Hollywood 27",
+    "address": "100 oaks",
+    "yelpId": ""
+  },
+  "theater2": {
+    "name": "Regal Green Hills",
+    "address": "green hills",
+    "yelpId": ""
+  }
+}

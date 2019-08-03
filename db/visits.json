@@ -1,0 +1,16 @@
+{
+  "visit1": {
+    "movieId": "movie1",
+    "theaterId": "theater1",
+    "movieDateTime": "Thu Aug 01 2019 19:30:00 GMT-0500",
+    "theaterNum": "9",
+    "isRecliners": false
+  },
+  "visit2": {
+    "movieId": "movie2",
+    "theaterId": "theater2",
+    "movieDateTime": "Fri Aug 02 2019 18:35:00 GMT-0500",
+    "theaterNum": "9",
+    "isRecliners": true
+  }
+}

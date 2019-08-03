@@ -1,0 +1,26 @@
+{
+  "userVisit1": {
+    "uid": "37Mn1uJirueyx3LrirI353DubnM2",
+    "visitId": "visit1",
+    "row": "H",
+    "seat": "6"
+  },
+  "userVisit2": {
+    "uid": "k9iVqPltVqQsCsJhwRLkz0Kg6Jk2",
+    "visitId": "visit1",
+    "row": "H",
+    "seat": "7"
+  },
+  "userVisit3": {
+    "uid": "37Mn1uJirueyx3LrirI353DubnM2",
+    "visitId": "visit2",
+    "row": "G",
+    "seat": "3"
+  },
+  "userVisit4": {
+    "uid": "k9iVqPltVqQsCsJhwRLkz0Kg6Jk2",
+    "visitId": "visit2",
+    "row": "G",
+    "seat": "2"
+  }
+}
