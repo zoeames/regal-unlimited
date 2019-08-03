@@ -1,10 +1,9 @@
 import React from 'react';
-import { NavLink as RRNavLink } from 'react-router-dom';
+import { NavLink as RRNavLink, Link } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   NavLink,
@@ -39,8 +38,11 @@ class MyNavbar extends React.Component {
       if (authed) {
         return (
           <Nav className="ml-auto" navbar>
-            <NavItem>
+            {/* <NavItem>
               <NavLink tag={RRNavLink} to='/home'>Home</NavLink>
+            </NavItem> */}
+            <NavItem>
+              <NavLink tag={RRNavLink} to='/new/movie'>New Movie</NavLink>
             </NavItem>
             <NavItem>
               <NavLink onClick={this.logMeOut}>Logout</NavLink>
@@ -54,7 +56,7 @@ class MyNavbar extends React.Component {
     return (
       <div className="MyNavbar">
         <Navbar color="dark" dark expand="md">
-          <NavbarBrand href="/">Regal Unlimited</NavbarBrand>
+          <Link to="/home" className='navbar-brand'>Regal Unlimited</Link>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             {buildNavbar()}
