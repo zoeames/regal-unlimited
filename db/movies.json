@@ -3,5 +3,10 @@
     "title": "Stuber",
     "imageUrl": "",
     "omdbId": ""
+  },
+  "movie2": {
+    "title": "The Lion King",
+    "imageUrl": "",
+    "omdbId": ""
   }
 }
