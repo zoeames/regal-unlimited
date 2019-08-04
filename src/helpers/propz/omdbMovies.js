@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const shortMovie = PropTypes.shape({
+const shortOmdbMovie = PropTypes.shape({
   Poster: PropTypes.string.isRequired,
   Title: PropTypes.string.isRequired,
   Type: PropTypes.string.isRequired,
@@ -8,4 +8,4 @@ const shortMovie = PropTypes.shape({
   imdbID: PropTypes.string.isRequired,
 });
 
-export default { shortMovie };
+export default { shortOmdbMovie };

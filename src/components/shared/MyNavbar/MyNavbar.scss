@@ -1,3 +1,11 @@
 .MyNavbar {
-  display: block;
+  .dropdown-menu {
+    .nav-link {
+      color: #212529 !important;
+
+      &:hover {
+        color: blue !important;
+      }
+    }
+  }
 }

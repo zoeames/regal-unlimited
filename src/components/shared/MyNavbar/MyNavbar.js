@@ -7,6 +7,10 @@ import {
   Nav,
   NavItem,
   NavLink,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+  DropdownToggle,
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import firebase from 'firebase/app';
@@ -27,6 +31,8 @@ class MyNavbar extends React.Component {
     this.setState({ isOpen: !this.state.isOpen });
   }
 
+  toggle = this.toggle.bind(this);
+
   logMeOut = (e) => {
     e.preventDefault();
     firebase.auth().signOut();
@@ -38,12 +44,19 @@ class MyNavbar extends React.Component {
       if (authed) {
         return (
           <Nav className="ml-auto" navbar>
-            {/* <NavItem>
-              <NavLink tag={RRNavLink} to='/home'>Home</NavLink>
-            </NavItem> */}
-            <NavItem>
-              <NavLink tag={RRNavLink} to='/new/movie'>New Movie</NavLink>
-            </NavItem>
+            <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
+                <i className="fas fa-popcorn"></i> Movies
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem>
+                  <NavLink tag={RRNavLink} to='/movies/list'>List</NavLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <NavLink tag={RRNavLink} to='/movies/new'>New</NavLink>
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
             <NavItem>
               <NavLink onClick={this.logMeOut}>Logout</NavLink>
             </NavItem>
