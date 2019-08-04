@@ -5,7 +5,6 @@ import './StaticGoogleMap.scss';
 
 const googleApiKey = apiKeys.firebaseKeys.apiKey;
 
-
 class StaticGoogleMap extends React.Component {
   googleMapRef = React.createRef()
 

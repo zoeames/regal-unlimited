@@ -44,19 +44,22 @@ class MyNavbar extends React.Component {
       if (authed) {
         return (
           <Nav className="ml-auto" navbar>
+            <NavItem>
+              <NavLink tag={RRNavLink} to='/theaters/list'><i className="fas fa-location"></i> Theaters</NavLink>
+            </NavItem>
             <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                <i className="fas fa-popcorn"></i> Movies
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                  <NavLink tag={RRNavLink} to='/movies/list'>List</NavLink>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <NavLink tag={RRNavLink} to='/movies/new'>New</NavLink>
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <DropdownToggle nav caret>
+              <i className="fas fa-popcorn"></i> Movies
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>
+                <NavLink tag={RRNavLink} to='/movies/list'>List</NavLink>
+                </DropdownItem>
+                <DropdownItem>
+                  <NavLink tag={RRNavLink} to='/movies/new'>New</NavLink>
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
             <NavItem>
               <NavLink onClick={this.logMeOut}>Logout</NavLink>
             </NavItem>
