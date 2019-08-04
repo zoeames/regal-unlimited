@@ -21,7 +21,17 @@ const getAllMovies = uid => new Promise((resolve, reject) => {
 
 const addMovie = newMovie => axios.post(`${baseUrl}/movies.json`, newMovie);
 
+const getSingleMovieById = movieId => new Promise((resolve, reject) => {
+  axios
+    .get(`${baseUrl}/movies/${movieId}.json`)
+    .then((res) => {
+      resolve(res.data);
+    })
+    .catch(err => reject(err));
+});
+
 export default {
   addMovie,
   getAllMovies,
+  getSingleMovieById,
 };
