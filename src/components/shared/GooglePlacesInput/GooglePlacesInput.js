@@ -6,16 +6,18 @@ import PlacesAutocomplete, {
 import './GooglePlacesInput.scss';
 
 class GooglePlacesInput extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { address: '' };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = { address: '' };
+  // }
+  state = {
+    address: '',
+  };
 
   handleChange = address => this.setState({ address });
 
   handleSelect = address => geocodeByAddress(address)
     .then((results) => {
-      console.error('address', results[0]);
       const googlePlaceLocation = results[0];
       const newTheater = {
         name: address.split(',')[0],
@@ -27,7 +29,7 @@ class GooglePlacesInput extends React.Component {
         lat: googlePlaceLocation.geometry.location.lat(),
         lng: googlePlaceLocation.geometry.location.lng(),
       };
-      console.error('newTheater', newTheater);
+      this.props.selectATheater(newTheater);
     });
 
   render() {
