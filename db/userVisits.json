@@ -22,5 +22,17 @@
     "visitId": "visit2",
     "row": "G",
     "seat": "2"
+  },
+  "userVisit5": {
+    "uid": "37Mn1uJirueyx3LrirI353DubnM2",
+    "visitId": "visit3",
+    "row": "H",
+    "seat": "8"
+  },
+  "userVisit6": {
+    "uid": "k9iVqPltVqQsCsJhwRLkz0Kg6Jk2",
+    "visitId": "visit3",
+    "row": "H",
+    "seat": "9"
   }
 }

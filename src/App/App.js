@@ -14,10 +14,14 @@ import Home from '../components/pages/Home/Home';
 import NewMovie from '../components/pages/NewMovie/NewMovie';
 import ListMovies from '../components/pages/ListMovies/ListMovies';
 import MovieDetail from '../components/pages/MovieDetail/MovieDetail';
+import ListTheaters from '../components/pages/ListTheaters/ListTheaters';
 
 import './App.scss';
 
 import fbConnection from '../helpers/data/connection';
+import apiKeys from '../helpers/apiKeys.json';
+
+const googleApiKey = apiKeys.firebaseKeys.apiKey;
 
 fbConnection();
 
@@ -41,6 +45,10 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    const googlePlacesScript = document.createElement('script');
+    googlePlacesScript.src = `https://maps.googleapis.com/maps/api/js?key=${googleApiKey}&libraries=places`;
+    window.document.body.appendChild(googlePlacesScript);
+
     this.removeListener = firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         this.setState({ authed: true });
@@ -70,6 +78,7 @@ class App extends React.Component {
                   <PrivateRoute path='/movie/:id' component={MovieDetail} authed={authed}/>
                   <PrivateRoute path='/movies/new' component={NewMovie} authed={authed}/>
                   <PrivateRoute path='/movies/list' component={ListMovies} authed={authed}/>
+                  <PrivateRoute path='/theaters/list' component={ListTheaters} authed={authed}/>
                   <Redirect from="*" to="/auth" />
                 </Switch>
               </div>

@@ -1,12 +1,32 @@
 {
   "theater1": {
-    "name": "Regal Hollywood 27",
-    "address": "100 oaks",
-    "yelpId": ""
+    "cityAddress": "Nashville",
+    "googlePlaceId": "ChIJfRG12kFo04kRFahod3J-_DY",
+    "lat": 36.1060324,
+    "lng": -86.7621408,
+    "name": "Regal Hollywood & RPX - Nashville",
+    "stateAddress": "TN",
+    "streetAddress": "719 Thompson Lane",
+    "zipAddress": "37204"
   },
   "theater2": {
+    "cityAddress": "Nashville",
+    "googlePlaceId": "ChIJ021-4nNkZIgRve8YVBXmw4A",
+    "lat": 36.1086631,
+    "lng": -86.81711000000001,
     "name": "Regal Green Hills",
-    "address": "green hills",
-    "yelpId": ""
+    "stateAddress": "TN",
+    "streetAddress": "3815 Green Hills Village Drive",
+    "zipAddress": "37215"
+  },
+  "theater3": {
+    "cityAddress": "Nashville",
+    "googlePlaceId": "ChIJf0kSAc9pZIgR5FldJQ-kU0Q",
+    "lat": 36.2059894,
+    "lng": -86.69514500000002,
+    "name": "Regal Opry Mills 4DX",
+    "stateAddress": "TN",
+    "streetAddress": "570 Opry Mills Drive",
+    "zipAddress": "37214"
   }
 }

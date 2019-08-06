@@ -10,5 +10,11 @@
     "imdbId": "tt6105098",
     "title": "The Lion King",
     "year": "2019"
+  },
+  "movie3": {
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjQ0NTI0NjkyN15BMl5BanBnXkFtZTgwNzY0MTE0NzM@._V1_SX300.jpg",
+    "imdbId": "tt8079248",
+    "title": "Yesterday",
+    "year": "2019"
   }
 }
