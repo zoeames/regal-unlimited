@@ -19,5 +19,12 @@
     "movieDateTime": "Sun Aug 04 2019 15:00:00 GMT-0500",
     "theaterNum": "13",
     "isRecliners": true
+  },
+  "visit4": {
+    "movieId": "movie4",
+    "theaterId": "theater2",
+    "movieDateTime": "Sat Aug 10 2019 11:45:00 GMT-0500",
+    "theaterNum": "15",
+    "isRecliners": true
   }
 }

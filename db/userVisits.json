@@ -3,36 +3,64 @@
     "uid": "37Mn1uJirueyx3LrirI353DubnM2",
     "visitId": "visit1",
     "row": "H",
-    "seat": "6"
+    "seat": "6",
+    "additionalCharge": 0,
+    "reward": ""
   },
   "userVisit2": {
     "uid": "k9iVqPltVqQsCsJhwRLkz0Kg6Jk2",
     "visitId": "visit1",
     "row": "H",
-    "seat": "7"
+    "seat": "7",
+    "additionalCharge": 0,
+    "reward": ""
   },
   "userVisit3": {
     "uid": "37Mn1uJirueyx3LrirI353DubnM2",
     "visitId": "visit2",
     "row": "G",
-    "seat": "3"
+    "seat": "3",
+    "additionalCharge": 0,
+    "reward": "250 points"
   },
   "userVisit4": {
     "uid": "k9iVqPltVqQsCsJhwRLkz0Kg6Jk2",
     "visitId": "visit2",
     "row": "G",
-    "seat": "2"
+    "seat": "2",
+    "additionalCharge": 0,
+    "reward": "250 points"
   },
   "userVisit5": {
     "uid": "37Mn1uJirueyx3LrirI353DubnM2",
     "visitId": "visit3",
     "row": "H",
-    "seat": "8"
+    "seat": "8",
+    "additionalCharge": 0,
+    "reward": ""
   },
   "userVisit6": {
     "uid": "k9iVqPltVqQsCsJhwRLkz0Kg6Jk2",
     "visitId": "visit3",
     "row": "H",
-    "seat": "9"
+    "seat": "9",
+    "additionalCharge": 0,
+    "reward": ""
+  },
+  "userVisit7": {
+    "uid": "37Mn1uJirueyx3LrirI353DubnM2",
+    "visitId": "visit4",
+    "row": "G",
+    "seat": "5",
+    "additionalCharge": 0,
+    "reward": ""
+  },
+  "userVisit8": {
+    "uid": "k9iVqPltVqQsCsJhwRLkz0Kg6Jk2",
+    "visitId": "visit4",
+    "row": "G",
+    "seat": "6",
+    "additionalCharge": 0,
+    "reward": ""
   }
 }
