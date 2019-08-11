@@ -62,5 +62,21 @@
     "seat": "6",
     "additionalCharge": 0,
     "reward": ""
+  },
+  "userVisit7": {
+    "uid": "37Mn1uJirueyx3LrirI353DubnM2",
+    "visitId": "visit5",
+    "row": "F",
+    "seat": "3",
+    "additionalCharge": 0,
+    "reward": ""
+  },
+  "userVisit8": {
+    "uid": "k9iVqPltVqQsCsJhwRLkz0Kg6Jk2",
+    "visitId": "visit5",
+    "row": "F",
+    "seat": "4",
+    "additionalCharge": 0,
+    "reward": ""
   }
 }
