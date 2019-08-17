@@ -53,7 +53,7 @@
     "row": "G",
     "seat": "5",
     "additionalCharge": 0,
-    "reward": ""
+    "reward": "movie comic"
   },
   "userVisit08": {
     "uid": "k9iVqPltVqQsCsJhwRLkz0Kg6Jk2",
@@ -61,7 +61,7 @@
     "row": "G",
     "seat": "6",
     "additionalCharge": 0,
-    "reward": ""
+    "reward": "movie comic"
   },
   "userVisit09": {
     "uid": "37Mn1uJirueyx3LrirI353DubnM2",
@@ -69,7 +69,7 @@
     "row": "F",
     "seat": "3",
     "additionalCharge": 0,
-    "reward": ""
+    "reward": "500 points, small popcorn"
   },
   "userVisit10": {
     "uid": "k9iVqPltVqQsCsJhwRLkz0Kg6Jk2",
@@ -77,6 +77,6 @@
     "row": "F",
     "seat": "4",
     "additionalCharge": 0,
-    "reward": ""
+    "reward": "500 points, small popcorn"
   }
 }
