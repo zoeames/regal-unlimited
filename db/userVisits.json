@@ -78,5 +78,38 @@
     "seat": "4",
     "additionalCharge": 0,
     "reward": "500 points, small popcorn"
+  },
+
+  "userVisit11": {
+    "uid": "37Mn1uJirueyx3LrirI353DubnM2",
+    "visitId": "visit6",
+    "row": "D",
+    "seat": "8",
+    "additionalCharge": 0,
+    "reward": "2 free audible books"
+  },
+  "userVisit12": {
+    "uid": "k9iVqPltVqQsCsJhwRLkz0Kg6Jk2",
+    "visitId": "visit6",
+    "row": "D",
+    "seat": "9",
+    "additionalCharge": 0,
+    "reward": "2 free audible books"
+  },
+  "userVisit13": {
+    "uid": "37Mn1uJirueyx3LrirI353DubnM2",
+    "visitId": "visit7",
+    "row": "F",
+    "seat": "4",
+    "additionalCharge": 0.55,
+    "reward": "1000 points"
+  },
+  "userVisit14": {
+    "uid": "k9iVqPltVqQsCsJhwRLkz0Kg6Jk2",
+    "visitId": "visit7",
+    "row": "F",
+    "seat": "5",
+    "additionalCharge": 0.55,
+    "reward": "500 points"
   }
 }
