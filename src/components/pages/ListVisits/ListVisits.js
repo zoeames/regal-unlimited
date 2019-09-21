@@ -31,6 +31,7 @@ class ListVisits extends React.Component {
         <td>{visit.theater.name}</td>
         <td>{visit.theaterNum}</td>
         <td>{visit.isRecliners ? 'Yes' : 'No'}</td>
+        <td>{visit.guests.length}</td>
       </tr>
     );
 
@@ -43,6 +44,7 @@ class ListVisits extends React.Component {
               <th>Theater</th>
               <th>Theater #</th>
               <th>Recliners</th>
+              <th># Guests</th>
             </tr>
         </thead>
         <tbody>
