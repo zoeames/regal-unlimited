@@ -28,7 +28,7 @@ class ListVisits extends React.Component {
       <tr key={visit.id}>
         <td>{visit.movie.title}</td>
         <td>{moment(visit.movieDateTime).format('LLL')}</td>
-        <td>{visit.theaterId}</td>
+        <td>{visit.theater.name}</td>
         <td>{visit.theaterNum}</td>
         <td>{visit.isRecliners ? 'Yes' : 'No'}</td>
       </tr>
