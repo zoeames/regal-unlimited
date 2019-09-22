@@ -19,6 +19,9 @@ const getAllVisits = () => new Promise((resolve, reject) => {
     .catch(err => reject(err));
 });
 
+const getSingleVisit = visitId => axios.get(`${baseUrl}/visits/${visitId}.json`);
+
 export default {
   getAllVisits,
+  getSingleVisit,
 };

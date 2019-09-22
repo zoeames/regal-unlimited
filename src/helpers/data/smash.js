@@ -40,6 +40,39 @@ const getCompleteVisits = () => new Promise((resolve, reject) => {
     .catch(err => reject(err));
 });
 
+
+const getSingleVisit = visitId => new Promise((resolve, reject) => {
+  // const fullVisits = [];
+  let visit = {};
+  let movie = {};
+  let theater = {};
+  let userVisits = [];
+
+  visitsData.getSingleVisit(visitId)
+    .then((fbVisit) => {
+      visit = fbVisit.data;
+      moviesData.getSingleMovieById(visit.movieId)
+        .then((fbMovies) => {
+          movie = fbMovies;
+          theatersData.getSingleTheater(visit.theaterId)
+            .then((fbTheater) => {
+              theater = fbTheater.data;
+              userVisitsData.getAllUserVisitsForSingleVisit(visitId)
+                .then((fbUserVisits) => {
+                  userVisits = fbUserVisits;
+                  const newVisit = { ...visit, id: visitId };
+                  newVisit.movie = movie;
+                  newVisit.theater = theater;
+                  newVisit.guests = userVisits;
+                  resolve(newVisit);
+                });
+            });
+        });
+    })
+    .catch(err => reject(err));
+});
+
 export default {
   getCompleteVisits,
+  getSingleVisit,
 };

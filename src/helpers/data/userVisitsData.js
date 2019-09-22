@@ -19,6 +19,23 @@ const getAllUserVisits = () => new Promise((resolve, reject) => {
     .catch(err => reject(err));
 });
 
+const getAllUserVisitsForSingleVisit = visitId => new Promise((resolve, reject) => {
+  axios
+    .get(`${baseUrl}/userVisits.json?orderBy="visitId"&equalTo="${visitId}"`)
+    .then((res) => {
+      const userVisits = [];
+      if (res.data !== null) {
+        Object.keys(res.data).forEach((fbKey) => {
+          res.data[fbKey].id = fbKey;
+          userVisits.push(res.data[fbKey]);
+        });
+      }
+      resolve(userVisits);
+    })
+    .catch(err => reject(err));
+});
+
 export default {
   getAllUserVisits,
+  getAllUserVisitsForSingleVisit,
 };
