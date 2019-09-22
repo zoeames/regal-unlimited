@@ -28,5 +28,17 @@
     "imdbId": "tt1979376",
     "title": "Toy Story 4",
     "year": "2019"
+  },
+  "movie6": {
+    "mageUrl": "https://m.media-amazon.com/images/M/MV5BY2ZmNmUzNTctYTA3Mi00ZTg3LWFmMWMtYzU2ZjA3NDRmODIzXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+    "imdbId": "tt3864056",
+    "title": "The Goldfinch",
+    "year": "2019"
+  },
+  "movie7":{
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BNjM5ZTNiNGMtMDA2OC00MDYyLWEyNzAtOWZmMzFlY2VmOWM4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+    "imdbId": "tt5503686",
+    "title": "Hustlers",
+    "year": "2019"
   }
 }

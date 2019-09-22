@@ -15,6 +15,8 @@ import NewMovie from '../components/pages/NewMovie/NewMovie';
 import ListMovies from '../components/pages/ListMovies/ListMovies';
 import MovieDetail from '../components/pages/MovieDetail/MovieDetail';
 import ListTheaters from '../components/pages/ListTheaters/ListTheaters';
+import ListVisits from '../components/pages/ListVisits/ListVisits';
+import SingleVisit from '../components/pages/SingleVisit/SingleVisit';
 
 import './App.scss';
 
@@ -79,6 +81,8 @@ class App extends React.Component {
                   <PrivateRoute path='/movies/new' component={NewMovie} authed={authed}/>
                   <PrivateRoute path='/movies/list' component={ListMovies} authed={authed}/>
                   <PrivateRoute path='/theaters/list' component={ListTheaters} authed={authed}/>
+                  <PrivateRoute path='/visit/:id' component={SingleVisit} authed={authed}/>
+                  <PrivateRoute path='/visits/list' component={ListVisits} authed={authed}/>
                   <Redirect from="*" to="/auth" />
                 </Switch>
               </div>

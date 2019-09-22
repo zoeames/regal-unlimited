@@ -21,7 +21,10 @@ const getAllTheaters = uid => new Promise((resolve, reject) => {
 
 const addTheater = newTheater => axios.post(`${baseUrl}/theaters.json`, newTheater);
 
+const getSingleTheater = theaterId => axios.get(`${baseUrl}/theaters/${theaterId}.json`);
+
 export default {
   addTheater,
   getAllTheaters,
+  getSingleTheater,
 };

@@ -45,6 +45,9 @@ class MyNavbar extends React.Component {
         return (
           <Nav className="ml-auto" navbar>
             <NavItem>
+              <NavLink tag={RRNavLink} to='/visits/list'><i className="fas fa-ticket-alt"></i> Visits</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink tag={RRNavLink} to='/theaters/list'><i className="fas fa-location"></i> Theaters</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
